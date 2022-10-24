@@ -169,6 +169,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .header-list-contacts .item + .item {
@@ -176,6 +177,7 @@ body {
 }
 
 .header-mail {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -198,6 +200,9 @@ body {
 }
 
 .header-tel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -306,10 +311,15 @@ body {
 }
 
 .benefits-list-icon {
-  width: 270px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  /* width: 270px; */
   height: 120px;
   margin-bottom: 30px;
-  background-color: tomato;
+  background-color: #f5f4fa;
 }
 .benefits-icon {
 }
@@ -475,6 +485,11 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+.footer .container {
+  display: flex;
+}
+
 .footer-logo {
   font-family: "Raleway";
   font-style: normal;
@@ -557,6 +572,54 @@ body {
   color: var(--footer-text-accent);
 }
 
+.footer-container-soc {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+
+.footer-soc-description {
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-soc-item {
+}
+
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-soc-icon {
+  fill: var(--icon-hover);
+}
+
+.footer-soc-link:hover {
+  background: var(--icon-background-secondary);
+}
+
+.footer-soc-link:focus {
+  background: var(--icon-background-secondary);
+}
 /* ---------------PORTFOLIO MENU----------------*/
 
 .menu-title {
@@ -600,6 +663,8 @@ body {
 .btn-menu-item:active {
   color: var(--button-text-primary);
   background: var(--button-background-primary);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* ---------------PORTFOLIO PRODUCTS----------------*/
@@ -619,6 +684,12 @@ img {
   flex-wrap: wrap;
   gap: 30px;
 }
+
+.products-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .products-item .img {
   display: block;
   max-width: 100%;
