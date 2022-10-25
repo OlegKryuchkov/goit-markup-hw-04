@@ -320,6 +320,7 @@ body {
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
+  border-radius: 4px;
 }
 .benefits-icon {
 }
@@ -421,7 +422,7 @@ body {
 }
 
 .team-soc-link:hover,
-:focus {
+.team-soc-link:focus {
   background-color: var(--icon-background-secondary);
 }
 
@@ -471,11 +472,13 @@ body {
   fill: var(--icon-primary);
 }
 
-.clients-list-link:hover {
+.clients-list-link:hover,
+.clients-list-link:focus {
   border-color: var(--icon-background-secondary);
 }
 
-.clients-list-link:hover .clients-list-icon {
+.clients-list-link:hover .clients-list-icon,
+.clients-list-link:focus .clients-list-icon {
   fill: var(--icon-background-secondary);
 }
 
